@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+    <script src='./index.js'></script>
+    <script>
+        var arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+        new pagination({
+            el:'#app',  //类挂载的元素
+            data:arr,    //总数据
+            pageLength:[5,10,15,20],   //每页显示的数据条数（select框显示的数据）
+            cb1:(html)=>{
+                console.log(html)
+            },//页码改变是触发，接受当前页的数据
+            cb2:(num)=>{
+                console.log(num,222222222)
+            }//select框中的每页展示条数改变是触发，获取到当前选择的每页显示的条数
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.cont{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont span{
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin:20px 10px;
+    background:lawngreen;
+    color:#fff;
+}
+.pagination {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+select{
+    margin: 0 5px;
+}
+.list{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list li{
+    flex:1;
+    text-align: center;
+    cursor: pointer;
+}
+.list li.show{
+    color:blue;
+}
+input{
+    width: 40px;
+    text-align: center;
+    margin:0 5px;
+    border:1px solid #ccc;
+}
